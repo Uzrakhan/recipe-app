@@ -6,7 +6,7 @@ const SPOONACULAR_API_KEY = 'c307e9bf0d7b47dc82fc3d4ccf883754';
 
 //fetch recipes from server
 const fetchRecipes = async (query) => {
-    const apiUrl = `http://localhost:4000/api/recipes?q=${query}`;
+    const apiUrl = `http://localhost:4000/https://api.spoonacular.com/recipes?q=${query}`;
     try{
         const response = await fetch(apiUrl);
         const data = await response.json();
